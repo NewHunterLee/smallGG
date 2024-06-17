@@ -1,11 +1,11 @@
-import { ViewConfig } from '@vaadin/hilla-file-router/types.js';
-import { Button } from '@vaadin/react-components/Button.js';
+//import { ViewConfig } from '@hilla/hilla-file-router/types.js';
+import { Button } from '@hilla/react-components/Button.js';
 import React from 'react';
 
-export const config: ViewConfig = {
+/*export const config: ViewConfig = {
     menu: { order: 4, icon: 'line-awesome/svg/globe-solid.svg' },
     title: 'User Page',
-  };
+  };*/
 
 function UserPage() {
 

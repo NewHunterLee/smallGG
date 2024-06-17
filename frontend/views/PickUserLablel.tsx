@@ -1,17 +1,17 @@
-import { ViewConfig } from '@vaadin/hilla-file-router/types.js';
-import { Checkbox } from '@vaadin/react-components/Checkbox.js';
-import { CheckboxGroup } from '@vaadin/react-components/CheckboxGroup.js';
-import { Select } from '@vaadin/react-components/Select.js';
-import { RadioButton } from '@vaadin/react-components/RadioButton.js';
-import { RadioGroup } from '@vaadin/react-components/RadioGroup.js';
-import { Button } from '@vaadin/react-components/Button.js';
+//import { ViewConfig } from '@hilla/hilla-file-router/types.js';
+import { Checkbox } from '@hilla/react-components/Checkbox.js';
+import { CheckboxGroup } from '@hilla/react-components/CheckboxGroup.js';
+import { Select } from '@hilla/react-components/Select.js';
+import { RadioButton } from '@hilla/react-components/RadioButton.js';
+import { RadioGroup } from '@hilla/react-components/RadioGroup.js';
+import { Button } from '@hilla/react-components/Button.js';
 import { useNavigate } from 'react-router-dom';
 
 
-export const config: ViewConfig = {
+/*export const config: ViewConfig = {
     menu: { order: 2, icon: 'line-awesome/svg/globe-solid.svg' },
     title: 'Pick Labels',
-  };
+  };*/
 
   export default function PickLabelView() {
     const responsiveSteps = [

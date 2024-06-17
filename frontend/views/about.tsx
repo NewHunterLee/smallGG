@@ -1,11 +1,11 @@
-import { ViewConfig } from '@vaadin/hilla-file-router/types.js';
-import { Button } from '@vaadin/react-components/Button.js';
+//import { ViewConfig } from '@hilla/hilla-file-router/types.js';
+import { Button } from '@hilla/react-components/Button.js';
 import { useNavigate } from 'react-router-dom';
-import { Dialog } from '@vaadin/react-components/Dialog.js';
+import { Dialog } from '@hilla/react-components/Dialog.js';
 import { useState } from 'react';
-import { ProgressBar } from '@vaadin/react-components/ProgressBar.js';
+import { ProgressBar } from '@hilla/react-components/ProgressBar.js';
 
-export const config: ViewConfig = { menu: { order: 3, icon: 'line-awesome/svg/file.svg' }, title: 'Match' };
+/*export const config: ViewConfig = { menu: { order: 3, icon: 'line-awesome/svg/file.svg' }, title: 'Match' };*/
 
 export default function AboutView() {
   const navigate = useNavigate();
