@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 import { TabSheet } from "@hilla/react-components/TabSheet.js";
 import { Tab } from '@hilla/react-components/Tab.js';
 import { Tabs } from '@hilla/react-components/Tabs.js';
+import { useState } from 'react';
+import { Dialog } from '@hilla/react-components/Dialog.js';
 
 /*export const config: ViewConfig = {
     menu: { order: 1, icon: 'line-awesome/svg/globe-solid.svg' },
@@ -25,8 +27,15 @@ export default function LoginView() {
         };
 
         const LoginClick = () => {
-            navigate('../about'); 
+            navigate('../matchview'); 
           };
+
+        const FailLoginClick = () => {
+            setDialogOpened(true);
+          };
+
+      const [dialogOpened, setDialogOpened] = useState(false);
+
     return(
 
     <TabSheet>
@@ -62,12 +71,30 @@ export default function LoginView() {
 
         <div style={{ marginTop: '25px', fontSize: '14px', display: 'flex', justifyContent: 'center', gap: '10px' ,}}>
         <div style={{ marginTop: '20px', fontSize: '14px' }}><Button onClick={LoginClick}>Login</Button></div>
+        <div style={{ marginTop: '20px', fontSize: '14px' }}><Button onClick={FailLoginClick}>FailLogin</Button></div>
       </div>   
     </div>
     </div>
+
+    <Dialog
+        headerTitle="Login Status"
+        opened={dialogOpened}
+        onOpenedChanged={({ detail }) => setDialogOpened(detail.value)}
+        footerRenderer={() => (
+          <Button theme="primary" onClick={() => setDialogOpened(false)}>Close</Button>
+        )}
+      >
+        <div style={{ textAlign: 'center', minHeight: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+          <h2>Please type validate account</h2>
+        </div>
+      </Dialog>
         </div>
 
       
     </TabSheet>
     );
+}
+
+function setDialogOpened(arg0: boolean) {
+  throw new Error('Function not implemented.');
 }
