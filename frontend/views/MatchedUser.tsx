@@ -10,28 +10,32 @@ import React from 'react';
 function UserPage() {
 
   const userData = {
-    name: 'Miles Morales',
-    mbti: 'ISTJ',
-    avatarUrl:'images/profile-photo.png',
-    tags: ['Basketball','Sci-Fi Movie' ,'Japanese Cuisine']
+    name: 'Gwen Stacy',
+    mbti: 'ISTP',
+    avatarUrl:'images/girl.jpg',
+    tags: ['Basketball','Horror Movie' ,'Japanese Cuisine']
   };
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>User Profile</h1>
-      <img src={userData.avatarUrl} alt="User Avatar" style={{ width: '300px', borderRadius: '50%' }} />
-      <h2>{userData.name}</h2>
-      <p>MBTI: {userData.mbti}</p>
+      <div><img src={userData.avatarUrl} alt="User Avatar" style={{ width: '300px', borderRadius: '50%' }} /></div>
+      
+      <h1 style={{ border: '2px solid black', padding: '7px', display: 'inline-block' }}>
+      {userData.name}
+    </h1>
+    <div style={{ marginTop: '8px' }}>
+  <h2>MBTI: {userData.mbti}</h2>
+  </div>
+      
       <div>
         <ul style={{ listStyleType: 'none', padding: 0, display: 'flex', justifyContent: 'center' }}>
           {userData.tags.map((tag, index) => (
-            <li key={index} style={{ margin: '0 5px' }}>{tag}</li>
+            <p key={index} style={{ margin: '0 5px' }}>{tag}</p>
           ))}
         </ul>
       </div>
       <div style={{ marginTop: '25px', fontSize: '14px', display: 'flex', justifyContent: 'center', gap: '10px' }}>
-      <Button theme = "large">Yes</Button>
-      <Button theme="secondary large contrast">No!</Button>
+      <Button theme = "large">Chat Now!</Button>
       </div>
     </div>
   );

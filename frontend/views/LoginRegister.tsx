@@ -49,9 +49,8 @@ export default function LoginView() {
     <h2 className="mb-4">Register</h2>
     <div className="flex flex-col items-center">
       <FormLayout responsiveSteps={responsiveSteps}>
-          <TextField label="First name" />
-          <TextField label="Last name" />
-          <TextField {...{ colspan: 2 }} label="Username" />
+          <TextField label="Username" />
+          <TextField {...{ colspan: 2 }} label="Account" />
           <PasswordField label="Password" />
           <PasswordField label="Confirm password" />
         </FormLayout>

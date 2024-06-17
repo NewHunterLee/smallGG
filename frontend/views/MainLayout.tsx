@@ -19,9 +19,9 @@ export default function MainLayout() {
                         <NavLink to="/chat/1/user1">ChatView</NavLink>
                         <NavLink to="/LoginRegister">Login and Register</NavLink>
                         <NavLink to="/PickUserLablel">Label</NavLink>
-                        <NavLink to="/UserPage">User Page</NavLink>
-                        <NavLink to="/ProfilePhoto">Profile</NavLink>
-            
+                        <NavLink to="/MatchedUser">Matched User Page</NavLink>
+                        <NavLink to="/mainview">Main Page</NavLink>
+                        <NavLink to="/ModifyProfile">Modify</NavLink>
                     </nav>
                 </header>
             </div>

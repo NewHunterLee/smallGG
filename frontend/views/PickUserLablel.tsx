@@ -40,7 +40,7 @@ import { useNavigate } from 'react-router-dom';
     const navigate = useNavigate();
 
     const handleNextClick = () => {
-      navigate('../about'); 
+      navigate('../mainview'); 
     };
     
     

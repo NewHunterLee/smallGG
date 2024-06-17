@@ -6,9 +6,10 @@ import {ChatRoomList} from './views/ChatRoomList';
 import {ChatView} from './views/ChatView';
 import LoginRegister from './views/LoginRegister';
 import PickLabelView from './views/PickUserLablel';
-import UserPage from './views/UserPage';
-import ProfilePhoto from './views/ProfilePhoto';
+import UserPage from './views/MatchedUser';
 import Match from './views/matchview';
+import Mainview from './views/mainview';
+import ModifyProfile from './views/ModifyProfile';
 
 export const routes: RouteObject[] = [
   {
@@ -20,8 +21,9 @@ export const routes: RouteObject[] = [
       { path: '/chat/:roomId/:username', element: <ChatView /> ,handle: { title: 'chatroom' }}, 
       { path: '/LoginRegister', element: <LoginRegister /> ,handle: { title: 'login' }}, 
       { path: '/PickUserLablel', element: <PickLabelView /> ,handle: { title: 'User Label' }},
-      { path: '/UserPage', element: <UserPage /> ,handle: { title: 'User Page' }}, 
-      { path: '/ProfilePhoto', element: <ProfilePhoto /> ,handle: { title: 'profile' }}, 
+      { path: '/MatchedUser', element: <UserPage /> ,handle: { title: 'Matched User Page' }}, 
+      { path: '/mainview', element: <Mainview /> ,handle: { title: 'main page' }},
+      { path: '/ModifyProfile', element: <ModifyProfile /> ,handle: { title: 'modify page' }}, 
     ],
   },
 ];
