@@ -8,11 +8,6 @@ import { Button } from '@hilla/react-components/Button.js';
 import { useNavigate } from 'react-router-dom';
 
 
-/*export const config: ViewConfig = {
-    menu: { order: 2, icon: 'line-awesome/svg/globe-solid.svg' },
-    title: 'Pick Labels',
-  };*/
-
   export default function PickLabelView() {
     const responsiveSteps = [
       { minWidth: '0', columns: 1 },
@@ -51,7 +46,7 @@ import { useNavigate } from 'react-router-dom';
         <a href="https://www.16personalities.com/" target="_blank" rel="noopener noreferrer">
           Haven't tested your MBTI?
         </a>
-      </div>
+                </div>
 
       <RadioGroup label="Gender">
       <RadioButton value="male" label="Male" />

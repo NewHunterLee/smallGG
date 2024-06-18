@@ -9,7 +9,6 @@ import PickLabelView from './views/PickUserLablel';
 import UserPage from './views/MatchedUser';
 import Match from './views/matchview';
 import Mainview from './views/mainview';
-import ModifyProfile from './views/ModifyProfile';
 
 export const routes: RouteObject[] = [
   {
@@ -23,7 +22,6 @@ export const routes: RouteObject[] = [
       { path: '/PickUserLablel', element: <PickLabelView /> ,handle: { title: 'User Label' }},
       { path: '/MatchedUser', element: <UserPage /> ,handle: { title: 'Matched User Page' }}, 
       { path: '/mainview', element: <Mainview /> ,handle: { title: 'main page' }},
-      { path: '/ModifyProfile', element: <ModifyProfile /> ,handle: { title: 'modify page' }}, 
     ],
   },
 ];

@@ -14,14 +14,11 @@ export default function MainLayout() {
                 <header>
                     <h1 className="text-l m-0">My App</h1>
                     <nav>
-                        <NavLink to="/">list</NavLink>
-                        <NavLink to="/matchview">about</NavLink>
-                        <NavLink to="/chat/1/user1">ChatView</NavLink>
                         <NavLink to="/LoginRegister">Login and Register</NavLink>
                         <NavLink to="/PickUserLablel">Label</NavLink>
-                        <NavLink to="/MatchedUser">Matched User Page</NavLink>
                         <NavLink to="/mainview">Main Page</NavLink>
-                        <NavLink to="/ModifyProfile">Modify</NavLink>
+                        <NavLink to="/MatchedUser">Matched User Page</NavLink>
+                        <NavLink to="/chat/1/user1">ChatView</NavLink>
                     </nav>
                 </header>
             </div>
